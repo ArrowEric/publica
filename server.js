@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // CORS origins from env (comma-separated)
-const origins = (process.env.CORS_ORIGINS || 'http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000')
+const origins = (process.env.CORS_ORIGINS)
   .split(',')
   .map(s => s.trim())
   .filter(Boolean);
